@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mutiply.css"> <!-- ลิงก์ไปยังไฟล์ CSS -->
+</head>
+<body>
+    <h1>โปรแกรมสูตรคูณ</h1>  
+    <from id = "MutiplyFrom">
+        <label for="num">เเม่สูตรคูณ:</label>
+        <input type="number" id="num" name="num" min="0" max="100" required><br>
+
+        <input type="button" value="คำนวณเลข" onclick="calculateGrade()">
+        <input type="button" value="ยกเลิก" onclick="resetForm()">
+    </form>
+    <p id="result"></p>
+
+    <script src="mutiply.js"></script> <!-- ลิงก์ไปยังไฟล์ JavaScript -->
+</body>
+</html>

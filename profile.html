@@ -1,0 +1,219 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 35px;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+        }
+
+        .profile {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .profile img {
+            width: 200px;
+            border-radius: 10px;
+            border: 3px solid #3498db;
+        }
+
+        .profile-info p {
+            margin: 6px 0;
+            font-size: 16px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table th {
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px;
+        }
+
+        table td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #eaf2ff;
+        }
+    form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+label {display: block;}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=date] {
+  width : 20%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #3498db;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=reset] {
+  width: 20%;
+  background-color: #db3434;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=reset]:hover {
+  background-color: #ff6016;
+}
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>ประวัติส่วนตัว</h2>
+
+    <div class="profile">
+        <img src="OIP.jpg" alt="Profile Image">
+
+        <div class="profile-info">
+            <p><strong>ชื่อ-นามสกุล:</strong> พฤหัส เกษมะณี</p>
+            <p><strong>ชื่อเล่น:</strong> เปรม</p>
+            <p><strong>สาขาวิชา:</strong> เทคโนโลยีสารสนเทศและการสื่อสาร</p>
+            <p><strong>คณะ:</strong> เทคโนโลยีสารสนเทศ</p>
+            <p><strong>สถาบัน:</strong> มหาวิทยาลัยศรีปทุม วิทยาเขตชลบุรี</p>
+        </div>
+    </div>
+
+    <h2>เเสดงข้อมูลนักศึกษา</h2> <br>
+    <table border="1">
+    <tr>
+        <th>รูป</th>
+        <th>รหัสนักศึกษา</th>   
+        <th>ชื่อ-นามสกุล</th>
+        <th>ชื่อเล่น</th>
+        <th>คณะ</th>
+</tr>
+<tr>
+    <td><img src="OIP.jpg" alt="Profile Image" width="100"></td>
+    <td>68702319</td>
+    <td>พฤหัส เกษมะณี</td>
+    <td>เปรม</td>
+    <td>เทคโนโลยีสารสนเทศ</td>
+</tr>
+<tr>
+    <td><img src="OIP.jpg" alt="Profile Image" width="100"></td>
+    <td>68703256</td>
+    <td>จิรวัฒน์ ชัยถาวรกิจ </td>
+    <td>ต้นหลิว</td>
+    <td>เทคโนโลยีสารสนเทศ</td>
+</tr>
+<tr>
+    <td><img src="OIP.jpg" alt="Profile Image" width="100"></td>
+    <td>68705698</td>
+    <td>จักรกฤษ สัจจรักษ์</td>
+    <td>เบส</td>
+    <td>เทคโนโลยีสารสนเทศ</td>
+</tr>
+</table>
+
+<h2>ลงทะเบียน</h2>
+
+<form action="/action_page.php">
+  <label for="fname">รหัสนักศึกษา</label>
+  <input type="text" id="id_std" name="id_std" placeholder="รหัสนักศึกษา..." required>
+  
+  
+  
+  
+  <label>First Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="ชื่อ..." required>
+
+  <label>Last Name</label>
+  <input type="text" id="lname" name="lastname" placeholder="นามสกุล..." required>
+  
+  <label>ชื่อเล่น</label>
+  <input type="text" id="P_name" name="P_name" placeholder="ชื่อเล่น..">
+
+  <label>คณะ</label>
+  <select id="country" name="country" required>
+    <option value="1">เทคโนโลยีสารสนเทศ</option>
+    <option value="2">บัญชี</option>
+    <option value="3">อ่างทอง</option>
+  </select>
+  
+  <label>วันเกิด</label>
+  <input type="date" id="tdate" name="tdate" required>
+  
+  <label>รูปภาพ</label>
+  <input type="file" id="file1" name="file1"> <br><br>
+  
+  <input type="submit" value="Submit"> 
+  <input type="reset"  value="cancel">
+</form>
+</div>
+</body>
+</html>
